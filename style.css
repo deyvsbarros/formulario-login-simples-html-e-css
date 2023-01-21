@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+main.container {
+  background-color: #ffffff;
+  min-width: 350px;
+  min-height: 40vh;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.campo {
+  position: relative;
+}
+
+.campo:first-child {
+  margin-bottom: 24px;
+}
+
+.campo .linha::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.campo input {
+  outline: none;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+input[type="submit"] {
+  margin-top: 32px;
+  padding: 8px;
+  cursor: pointer;
+  background: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.rodape span {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+}
+
+.rede-social {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.rede-social a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.google,
+.fb {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+}
+
+.google a,
+.fb a {
+  padding-left: 16px;
+}
